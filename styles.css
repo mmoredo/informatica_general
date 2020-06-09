@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Lora', serif;
+    color: #383838;
+    padding: 50px 200px;
+}
+
+h1 {
+    font-family: 'Coustard', serif;
+    font-size: 56px;
+    color: #262626;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 24px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+/*
+nav {}
+*/
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 0 20px;
+    font-size:24px;
+}
+
+nav li:last-child {
+    padding-right: 0;
+}
+
+nav li.activo {
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #474a4b;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: black;
+}
+
+img.logo {
+    height: 50px;
+}
+
+/* ... */
+
+main {
+    margin: 50px 0;
+}
+
+#contenedor {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Columnas - Index */
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.col-izquierda {
+    margin-right: 90px;
+}
+
+.col-derecha h1, .col-derecha h2 {
+    margin-bottom: 30px;
+}
+
+/*
+article {
+}
+*/
+
+/* Botones */
+
+a.btn-primario {
+    display: inline-flex;
+    background-color: #b34d4d;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    padding: 15px 26px;
+    border-radius: 50px;
+}
+
+a.btn-primario:active {
+    background-color: #4b4747;
+}
+
+a.btn-primario:hover {
+    background-color: black;
+}
+
+
+/* Footer 
+
+footer {
+}
+*/
+
+footer p {
+    font-size: 18px;
+    color:#4b4747;
+}
+
+
+/* Pagina Actores */
+
+#seccion-actores {
+    margin-top: 120px;
+ }
+
+#imagenes-actores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+#imagenes-actores div {
+    padding: 30px 10px;
+}
+
+#imagenes-actores h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#imagenes-actores h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Pagina Premios */
