@@ -31,7 +31,6 @@ header {
     margin-top: 120px;
 }
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -73,8 +72,6 @@ img.logo {
     height: 50px;
 }
 
-/* ... */
-
 main {
     margin: 50px 0;
 }
@@ -100,11 +97,6 @@ main {
     margin-bottom: 30px;
 }
 
-/*
-article {
-}
-*/
-
 /* Botones */
 
 a.btn-primario {
@@ -129,11 +121,7 @@ a.btn-primario:hover {
 }
 
 
-/* Footer 
-
-footer {
-}
-*/
+/* Footer */
 
 footer p {
     font-size: 18px;
