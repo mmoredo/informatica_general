@@ -21,8 +21,12 @@ h2 {
     font-weight: 500;
 }
 
-p {
+header p {
     font-size: 24px;
+}
+
+p {
+    font-size: 18px;
 }
 
 /* Header */
@@ -83,6 +87,12 @@ main {
 
 /* Columnas - Index */
 
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .flex-center {
     display: flex;
     align-items: center;
@@ -95,6 +105,10 @@ main {
 .col-derecha h1,
 .col-derecha h2 {
     margin-bottom: 30px;
+}
+
+.col-derecha p {
+    font-size: 24px;
 }
 
 /* Botones */
@@ -131,15 +145,8 @@ footer p {
 
 /* Pagina Actores */
 
-#imagenes-actores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px 0;
-}
-
-#imagenes-actores div {
-    padding: 30px 10px;
+#imagenes-actores article {
+    margin: 50px 50px 0 0;
 }
 
 #imagenes-actores h4 {
@@ -154,10 +161,6 @@ footer p {
 
 /* Pagina Premios */
 
-#premios {
-    border-left: 1px solid lightgray;
-}
-
 #premios section {
     margin: 80px 0;
 }
@@ -167,10 +170,19 @@ footer p {
     margin: 0 50px;
 }
 
-#premios p {
-    font-size: 18px;
-}
-
 #premios h2 {
     margin-bottom: 5px;
+}
+
+/* Pagina temporadas */
+
+#temporadas article {
+    background-color: black;
+    color: #FFFFFF;
+    max-width: 300px;
+    margin: 50px 50px 0 0;
+}
+
+#temporadas article div {
+    padding: 20px
 }
