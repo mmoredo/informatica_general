@@ -140,6 +140,8 @@ a.btn-primario:hover {
 footer p {
     font-size: 18px;
     color: #4b4747;
+    padding-top: 20px;
+    border-top: 1px solid lightgrey;
 }
 
 
@@ -174,10 +176,10 @@ footer p {
     margin-bottom: 5px;
 }
 
-/* Pagina temporadas */
+/* Pagina Temporadas */
 
 #temporadas article {
-    background-color: black;
+    background-color: #262626;
     color: #FFFFFF;
     max-width: 300px;
     margin: 50px 50px 0 0;
@@ -185,4 +187,13 @@ footer p {
 
 #temporadas article div {
     padding: 20px
+}
+
+#temporadas h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#temporadas p {
+    font-size: 18px;
 }
