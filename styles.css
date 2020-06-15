@@ -3,28 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+*::selection {
+    background-color: #f4f4e8;
+}
 body {
     font-family: 'Lora', serif;
     color: #383838;
     padding: 50px;
+    background-color: #FFFFFF;
 }
-
 h1 {
     font-family: 'Coustard', serif;
     font-size: 56px;
     color: #262626;
 }
-
 h2 {
     font-size: 28px;
     font-weight: 500;
 }
-
-header p {
-    font-size: 24px;
-}
-
 p {
     font-size: 18px;
 }
@@ -34,90 +30,80 @@ p {
 header {
     margin-top: 120px;
 }
-
+header p {
+    font-size: 24px;
+}
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 nav ul {
     display: flex;
     list-style-type: none;
 }
-
 nav li {
     padding: 0 20px;
     font-size: 24px;
 }
-
 nav li:last-child {
     padding-right: 0;
 }
-
 nav li.activo {
     font-weight: bold;
 }
-
-nav a {
+nav a:link {
     text-decoration: none;
     color: #474a4b;
 }
-
 nav a:hover {
-    text-decoration: underline;
+    color: #b34d4d;
 }
-
 nav a:active {
-    color: black;
+    font-weight: bold;
 }
-
-img.logo {
-    height: 50px;
+nav a:visited {
+    color: #000000;
 }
-
-main {
-    margin: 50px 0;
-}
-
 #contenedor {
     max-width: 1920px;
     margin: 0 auto;
 }
+main {
+    margin: 50px 0;
+}
 
-/* Columnas - Index */
+/* Columnas */
 
-.flex-wrap {
+#premios, #imagenes-actores, #temporadas {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
-.flex-center {
+#trama {
     display: flex;
     align-items: center;
 }
 
-.col-izquierda {
-    margin-right: 90px;
-}
+/* Inicio */
 
-.col-derecha h1,
-.col-derecha h2 {
+#trama article {
+    margin-left: 90px;
+}
+#trama article h1,
+#trama article h2 {
     margin-bottom: 30px;
 }
-
-.col-derecha p {
+#trama article p {
     font-size: 24px;
 }
 
-/* Botones */
+/* Boton */
 
-a.btn-primario {
+a.boton:link {
     display: inline-flex;
-    background-color: #b34d4d;
+    background-color: #262626;
     color: #FFFFFF;
-    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -125,75 +111,74 @@ a.btn-primario {
     padding: 15px 26px;
     border-radius: 50px;
 }
-
-a.btn-primario:active {
+a.boton:active {
     background-color: #4b4747;
 }
-
-a.btn-primario:hover {
-    background-color: black;
+a.boton:hover {
+    background-color: #b34d4d;
 }
-
+a.boton:visited {
+    background-color: #f2f2f2;
+    color: #262626;
+}
 
 /* Footer */
 
 footer p {
-    font-size: 18px;
     color: #4b4747;
     padding-top: 20px;
-    border-top: 1px solid lightgrey;
+    border-top: 1px solid #f2f2f2;
 }
 
-
-/* Pagina Actores */
+/* Actores */
 
 #imagenes-actores article {
-    margin: 50px 50px 0 0;
+    margin: 0 50px 50px 0;
 }
-
 #imagenes-actores h4 {
     font-size: 22px;
     font-weight: 400;
 }
-
 #imagenes-actores h3 {
     font-size: 22px;
     font-weight: 400;
 }
 
-/* Pagina Premios */
+/* Premios */
 
-#premios section {
-    margin: 80px 0;
+#premios article, #premios div {
+    padding: 0 40px 60px 40px;
+    width: 600px;
+    border-left: 1px solid #f2f2f2;
 }
-
-#premios section img {
+#premios img {
     height: 100px;
-    margin: 0 50px;
+    margin-bottom: 20px;
 }
-
 #premios h2 {
     margin-bottom: 5px;
 }
+#premios div {
+    display: inline-flex;
+    align-items: center;
+}
 
-/* Pagina Temporadas */
+/* Temporadas */
 
 #temporadas article {
     background-color: #262626;
     color: #FFFFFF;
-    max-width: 300px;
-    margin: 50px 50px 0 0;
+    width: 300px;
+    margin: 0 50px 50px 0;
 }
-
 #temporadas article div {
-    padding: 20px
+    padding: 20px 30px 30px 30px;
 }
-
-#temporadas h3 {
+#temporadas h2 {
     font-size: 22px;
-    margin-bottom: 10px;
+    font-weight: 600;
 }
-
-#temporadas p {
-    font-size: 18px;
+#temporadas h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
 }
